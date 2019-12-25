@@ -1,0 +1,51 @@
+<!-- <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+
+        <div class="modal-header">
+          <h4 class="modal-title">{{message}}</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+   
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div> -->
+
+<p>{{message}}</p>
+
+<div class="list-container">
+  <div class="todo-container column-container">
+    <div class="list">
+      <h2>Tech to learn</h2>
+      <mat-card *ngFor="let todo of todos">
+        <mat-card-header>
+          <mat-card-title>{{todo.name}}</mat-card-title>
+          <mat-card-subtitle>{{todo.category}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="done-container column-container">
+    <div class="list">
+      <h2>Tech learned</h2>
+      <mat-card *ngFor="let complete of completed">
+        <mat-card-header>
+          <mat-card-title>{{complete.name}}</mat-card-title>
+          <mat-card-subtitle>{{complete.category}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>

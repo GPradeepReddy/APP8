@@ -1,0 +1,23 @@
+<app-header></app-header>
+<app-dynamic></app-dynamic>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <app-recipe></app-recipe>
+            <app-shopping-list></app-shopping-list>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <input type="text" class="form-control" [(ngModel)]="firstName">
+        </div>
+        <div class="col-3">
+            <input type="text" class="form-control" [(ngModel)]="secondName">
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" [disabled]="isDisabled">Add</button>
+        </div>
+    </div>
+</div>
